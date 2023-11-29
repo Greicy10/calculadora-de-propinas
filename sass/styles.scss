@@ -24,7 +24,6 @@ letter-spacing: 8px;
     font-size: 0.75em;
     margin-bottom: 8px;
 }
-
 .input-section__people-label{
     @include mixins.label;
 }
@@ -33,6 +32,9 @@ letter-spacing: 8px;
     @include mixins.input;
 }
 
+.btns{
+    border: solid red;
+}
 *{
     padding: 0;
     margin: 0;
