@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">SPLI <br>TTER</h1>
+  </header>
+
+  <section class="calculator-container">
+    <div class="input-section">
+      <label for="bill" class="input-section__bill-label">Bill</label>
+      <input id="bill" type="number" value="0" class="input-section__bill-input">
+
+      <fieldset class="btn">
+        <legend class="btn__legend">Selec tip %</legend>
+        <button class="btn__button">5%</button>
+        <button class="btn__button btn__button--selected">10%</button>
+        <button class="btn__button">15%</button>
+        <button class="btn__button">25%</button>
+        <button class="btn__button">50%</button>
+        <input type="number" placeholder="Custom">
+      </fieldset>
+
+      <label for="people" class="input-section__people-label">Bill</label>
+      <input id="people" type="number" value="0" class="input-section__people-input">
+    </div>
+
+    <div class="result-section">
+      <div class="results">
+
+      <div>
+        <p class="result__tip-amount">Tip Amount</p>
+        <p class="result__tip-person">/ person</p>
+      </div>
+
+      <p class="result__tip-value"></p>
+
+      <div>
+        <p class="result__total-amount">Total</p>
+        <p class="result__total-person">/ person</p>
+      </div>
+
+      <p></p>
+
+      </div>
+
+      <button>Reset</button>
+    </div>
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Greicy Diaz</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

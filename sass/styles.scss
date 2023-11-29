@@ -1,0 +1,56 @@
+@use 'variables';
+@use 'initial';
+@use 'mixins';
+
+.header__title{ 
+text-align: center;
+color: variables.$Dark-grayish-cyan;
+font-size: 1em;
+margin: 30px 0px;
+letter-spacing: 8px;
+}
+
+.calculator-container{
+    background-color: variables.$White;
+    width: 375px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.input-section__bill-label{
+    display:block;
+    color: variables.$Dark-grayish-cyan;
+    font-size: 0.75em;
+    margin-bottom: 8px;
+}
+
+.input-section__people-label{
+    @include mixins.label;
+}
+
+.input-section__bill-input {
+    @include mixins.input;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$Light-grayish-cyan;
+    color: black;
+    font-family: variables.$font;
+    font-size: 24px;
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hs1(228, 45%, 44%);
+    }
+}
